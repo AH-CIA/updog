@@ -11,6 +11,7 @@ function setup() {
 
 function draw() {
   background(255,255,255,0);
+  colorMode(RGB);
   translate(799,799);
   for(let i = 0; i < swirlythingcount; i++){
     swirlything[i].display();
@@ -33,7 +34,7 @@ class swirlythingconstructor{
     let y = this.radius * sin(this.angle);
     stroke(0,100);
     line(0,0,x,y);
-    fill(RGB(random(0,255)),(random(0,255)),(random(0,255)));
+    fill((random(0,255)),(random(0,255)),(random(0,255)));
     ellipse(x,y,5,5);
   }
 }
