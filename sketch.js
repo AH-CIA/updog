@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(255,255,255,0);
+  background(255,255,255,5);
   colorMode(RGB);
   translate(799,799);
   for(let i = 0; i < swirlythingcount; i++){
