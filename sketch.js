@@ -33,7 +33,7 @@ class swirlythingconstructor{
     let y = this.radius * sin(this.angle);
     stroke(0,100);
     line(0,0,x,y);
-    fill(243);
+    fill(RGB(random(0,255),(random(0,255),(random(0,255)));
     ellipse(x,y,5,5);
   }
 }
