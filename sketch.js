@@ -1,6 +1,6 @@
 
 let swirlything = [];
-let swirlythingcount = 50;
+let swirlythingcount = 100;
 
 function setup() {
   cursorblindness = createCanvas(800, 800);
@@ -21,7 +21,7 @@ function draw() {
 class swirlythingconstructor{
   constructor(n){
     this.angle = 0;
-    this.anglespeed = 0.01 + n * 0.004;
+    this.anglespeed = 0.01 + n * 0.01;
     this.radius = 10 + n * 6;
   }
 
