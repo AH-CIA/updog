@@ -3,7 +3,7 @@ let swirlything = [];
 let swirlythingcount = 100;
 
 function setup() {
-  cursorblindness = createCanvas(800, 800);
+  cursorblindness = createCanvas(1600, 1600);
   for(let i = 0; i < swirlythingcount; i++){
     swirlything[i] = new swirlythingconstructor(i)
   }
@@ -11,12 +11,12 @@ function setup() {
 
 function draw() {
   background(255,255,255,0);
-  translate(399,399);
+  translate(799,799);
   for(let i = 0; i < swirlythingcount; i++){
     swirlything[i].display();
     swirlything[i].update();
   }
-  cursorblindness.position(winMouseX-399,winMouseY-399)
+  cursorblindness.position(winMouseX-799,winMouseY-799)
 }
 class swirlythingconstructor{
   constructor(n){
