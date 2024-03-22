@@ -16,6 +16,9 @@ function draw() {
   for(let i = 0; i < swirlythingcount; i++){
     swirlything[i].display();
     swirlything[i].update();
+
+
+    
   }
   cursorblindness.position(winMouseX-799,winMouseY-799)
 }
